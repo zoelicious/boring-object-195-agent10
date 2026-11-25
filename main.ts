@@ -7,6 +7,7 @@ if (TEXT.length < 1 || TEXT.length > 200) {
   throw new Error("TEXT must be 1-200 characters, got " + TEXT.length);
 }
 
+// Writes the one-line review to entry.txt in the output directory.
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 
 try {
